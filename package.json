@@ -1,0 +1,19 @@
+{
+  "name": "jest",
+  "version": "1.0.0",
+  "description": "jest sample",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sso214/jest.git"
+  },
+  "author": "leo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sso214/jest/issues"
+  },
+  "homepage": "https://github.com/sso214/jest#readme"
+}
