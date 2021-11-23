@@ -121,4 +121,27 @@ test('name = leo', done => {
 });
 
 
-// 비동기 함수 테스트 (promise 패턴)
+// 비동기 함수 테스트 (promise 패턴) return을 해줘야 함!!
+test('age = 25', () => {
+    return fn.getAge().then(age => {
+        expect(age).toBe(25);
+    });
+});
+// resolve, rejects
+test('age = 25', () => {
+    return expect(fn.getAge()).resolves.toBe(25);
+});
+test('age = 25', () => {
+    return expect(fn.getAge()).rejects.toMatch('error');
+});
+
+
+//async, await
+test('age is 25', async () => {
+    const age = await fn.getAge();
+    expect(age).toBe(25);
+});
+test('age is 25', async () => {
+    await expect(fn.getAge()).resolves.toBe(25);
+});
+

@@ -12,7 +12,13 @@ const fn = {
         }, 3000);
     },
     getAge: () => {
-
+        const age = 25;
+        return new Promise((res, rej) => {
+            setTimeout(() => {
+                res(age);
+                // rej('error');
+            }, 3000);
+        })
     }
 };
 
